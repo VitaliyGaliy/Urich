@@ -1,0 +1,13 @@
+.profileWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileImge{
+    width: 300px;
+}
+
+.profileText{
+    width:700px
+}

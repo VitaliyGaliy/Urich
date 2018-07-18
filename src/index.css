@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbarWrapper{
+  display: flex;
+  flex-direction: row;
+  background-color: #819cff;
+  padding: 0 15px;
+}
+
+.navbarItemWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-right: auto;
+}
+
+.navbarItem{
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbarItem > a {
+  color: white;
+  text-decoration: none;
+}

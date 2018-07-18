@@ -1,0 +1,13 @@
+.newsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsImge{
+    width: 300px;
+}
+
+.newsText{
+    width:700px
+}
