@@ -10,7 +10,7 @@ render={props =>
                             }}
                         />
                     )
-в результате которой рендерится либо переданный, защищенный компонент либо происходит редирект на pathname: "/login". При подключении ридакса через connect, роуты в App компоненте нужно обернуть в компонент <Switch> так как в connect реализован shouldComponentUpdate метод а React router передает props через context-объект. Из-за чего не происходит re-render компонента. Второй вариант отключить проверку shouldComponentUpdate - connect(mapStateToProps, null, null, { pure: false })(PrivateRoute). Либо обернуть в компонент withRouter - withRouter(connect(mapStateToProps, null)(PrivateRoute)).
+в результате которой рендерится либо переданный, защищенный компонент либо происходит редирект на pathname: "/login". При подключении ридакса через connect, роуты в App компоненте нужно обернуть в компонент '<Switch>' так как в connect реализован shouldComponentUpdate метод а React router передает props через context-объект. Из-за чего не происходит re-render компонента. Второй вариант отключить проверку shouldComponentUpdate - connect(mapStateToProps, null, null, { pure: false })(PrivateRoute). Либо обернуть в компонент withRouter - withRouter(connect(mapStateToProps, null)(PrivateRoute)).
 
 Аналогичная логика реализована в компоненте Login - 
                 if (isAuthenticated) {
